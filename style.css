@@ -1,0 +1,155 @@
+body {
+    padding: 0;
+    margin: 10px 0px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    background-image: linear-gradient(#494f58, #60687c, #3f4448);
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.total-money {
+    font-size: 1.2em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.bill {
+    display: flex;
+    justify-content: center;
+    padding: 55px;
+    background-color: #efe2cc;
+}
+
+.bill strong {
+    font-size: 26px;
+}
+
+.total-money input {
+    border: solid gray 1px;
+    width: 40px;
+    height: 25px;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.bill input {
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
+    color: red;
+    background-color: #efe2cc;
+}
+
+.fruit-section {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(#494f58, #60687c, #3f4448);
+    justify-content: center;
+    flex-direction: row;
+}
+
+.fruit-section h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.top-bar {
+    background-color: #346e34;
+    color: white;
+    width: 100%;
+}
+
+.fruit-section img {
+    margin: 10px;
+    height: 130px;
+    width: 120px;
+}
+
+.fruit-section figure {
+    width: 18em;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeded;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.buying-fruits {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #7f8283;
+    text-align: center;
+    border-radius: 15px;
+    width: 8.5em;
+}
+
+.buying-fruits input {
+    text-align: center;
+    border: none;
+    width: 7em;
+    background-image: linear-gradient(#cac8c8, white);
+}
+
+.buying-fruits button {
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: 1em;
+    padding: 9px;
+    background-color: #494f58;
+}
+
+.less {
+    margin-right: 0px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.more {
+    margin-left: 0px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+figcaption {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.less:hover,
+.more:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .fruit-section {
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr) */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width: 850px) {
+    .fruit-section {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fruit shop task</title>
+    <!-- <script src="script.js"></script>-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Fruit Shop</h1>
+    </header>
+
+    <div>
+        <div class="total-money">
+            <strong>I have Rs.
+                   <span> <input type="number" value="0" min="0"> </span> 
+            </strong>
+        </div>
+
+        <div class="bill">
+            <strong>Your total is Rs.
+                 <span>  <input type="number" value="0" min="0"></span> 
+            </strong>
+        </div>
+
+        <section class="fruit-section ">
+            <div class="apple">
+                <figure>
+                    <div class="top-bar">
+                        <h2>Rs.10</h2>
+                    </div>
+                    <img src="images\apple.png" alt="apple">
+                    <figcaption>Apple</figcaption>
+
+                    <div class="buying-fruits">
+                        <button class="less" onclick="removeApple ()">-</button>
+                        <input type="number" value="0" min="0" id="total-apples">
+                        <button class=" more" onclick="addApple ()">+</button>
+                    </div>
+                </figure>
+            </div>
+            <div class="orange">
+                <figure>
+                    <div class="top-bar">
+                        <h2>Rs.15</h2>
+                    </div>
+                    <img src="images\orange.jpg" alt="orange">
+                    <figcaption>Orange</figcaption>
+
+                    <div class="buying-fruits">
+                        <button class="less" onclick="removeOrange ()">-</button>
+                        <input type="number" value="0" min="0" id="total-oranges">
+                        <button class="more" onclick="addOrange ()">+</button>
+                    </div>
+                </figure>
+            </div>
+            <div class="banana">
+                <figure>
+                    <div class="top-bar">
+                        <h2>Rs.7</h2>
+                    </div>
+                    <img src="images\bananas.jpg" alt="banana">
+                    <figcaption>Banana</figcaption>
+
+                    <div class="buying-fruits">
+                        <button class="less" onclick="removeBanana ()">-</button>
+                        <input type="number" value="0" min="0" id="total-bananas">
+                        <button class="more" onclick="addBanana ()">+</button>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
